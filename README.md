@@ -27,7 +27,7 @@ python library
     - Transforms these texts to vectors using [BERT Tokenizer and BERT pre-trained encoder](https://huggingface.co/bert-base-uncased)
     - Averaging user text vectors to build a vector characterizing this user
     
-![](pics/Schema%20of%20code.png)
+![](Schema%20of%20code.png)
 
 # Overall workflow
 
@@ -35,7 +35,7 @@ python library
 - Using described above algorithm we get two user representation vectors
 - Calculates [cosine similarity score](https://en.wikipedia.org/wiki/Cosine_similarity)
 
-![](pics/Overall%20schema.png)
+![](Overall%20schema.png)
 
 ## How text-to-vector conversion works
 This project uses a pre-trained BERT model. BERT consists of two parts: encoder and decoder.
@@ -44,7 +44,7 @@ The encoder has hidden output states.
 We can say that averaging these vectors represents a vector representation of a whole text. 
 So this representation can be used as a feature vector of this text.
 
-![](pics/berts_encoder_as_converter.png)
+![](berts_encoder_as_converter.png)
 See: [Measuring Text Similarity Using BERT](https://www.analyticsvidhya.com/blog/2021/05/measuring-text-similarity-using-bert/)
 ## Results
 
